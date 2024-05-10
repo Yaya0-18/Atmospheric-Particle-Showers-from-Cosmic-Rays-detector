@@ -1,4 +1,4 @@
-# Install script for directory: /home/yaya/TOF-detector
+# Install script for directory: /home/yaya/Atmospheric cosmic ray shower-detector
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yaya/TOF-detector/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yaya/Atmospheric cosmic ray shower-detector/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

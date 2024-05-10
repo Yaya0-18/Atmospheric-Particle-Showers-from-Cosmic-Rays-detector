@@ -20,8 +20,8 @@ file(GLOB DATA_FILES
 file(COPY ${DATA_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
 
-add_executable(TOF sim.cc ${sources} ${headers})
+add_executable(atmospheric sim.cc ${sources} ${headers})
 
-target_link_libraries(TOF ${Geant4_LIBRARIES})
+target_link_libraries(atmospheric ${Geant4_LIBRARIES})
 
-add_custom_target(Simulation DEPENDS TOF)
+add_custom_target(Simulation DEPENDS atmospheric)

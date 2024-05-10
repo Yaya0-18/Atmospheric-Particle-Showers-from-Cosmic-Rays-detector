@@ -24,22 +24,22 @@ public:
     G4LogicalVolume *GetScoringVolume() const {return fScoringVolume;}
 
     virtual G4VPhysicalVolume *Construct();
-    void ConstructTOF();
+    void ConstructAtmosphere();
 
 private:
     
 
     
-    //Defining the variables
+     //Defining the variables
        //The boxes 
-            G4Box *solidWorld, *solidDetector ;
+            G4Box *solidWorld, *solidRadiator , *solidDetector, *solidScintillator ,*solidAtmosphere;
             
-            G4LogicalVolume *logicWorld , *logicDetector; 
-            G4VPhysicalVolume *physWorld ,  *physDetector ;
+            G4LogicalVolume *logicWorld  ,*logicDetector,*logicAtmosphere[10]; 
+            G4VPhysicalVolume *physWorld , *physDetector ,  *physAtmosphere[10];
         
         //Material 
-            G4Material  *worldMat ;
-            
+            G4Material  *worldMat , *Air[10];
+            G4Element  *N, *O;
 
         void DefineMaterial();
         virtual void ConstructSDandField();
@@ -54,7 +54,7 @@ private:
         // Number of Rows and Columns to the optical detector
         G4int nCols,nRows;
         //bool
-        G4bool isTOF ;
+        G4bool isAtmosperic ;
 
 
     //Functions 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaya/TOF-detector
+CMAKE_SOURCE_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaya/TOF-detector/build
+CMAKE_BINARY_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles /home/yaya/TOF-detector/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,17 @@ Simulation/fast:
 .PHONY : Simulation/fast
 
 #=============================================================================
-# Target rules for targets named TOF
+# Target rules for targets named atmospheric
 
 # Build rule for target.
-TOF: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TOF
-.PHONY : TOF
+atmospheric: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 atmospheric
+.PHONY : atmospheric
 
 # fast build rule for target.
-TOF/fast:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/build
-.PHONY : TOF/fast
+atmospheric/fast:
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/build
+.PHONY : atmospheric/fast
 
 action.o: action.cc.o
 
@@ -142,7 +142,7 @@ action.o: action.cc.o
 
 # target to build an object file
 action.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/action.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/action.cc.o
 .PHONY : action.cc.o
 
 action.i: action.cc.i
@@ -151,7 +151,7 @@ action.i: action.cc.i
 
 # target to preprocess a source file
 action.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/action.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/action.cc.i
 .PHONY : action.cc.i
 
 action.s: action.cc.s
@@ -160,7 +160,7 @@ action.s: action.cc.s
 
 # target to generate assembly for a file
 action.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/action.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/action.cc.s
 .PHONY : action.cc.s
 
 construction.o: construction.cc.o
@@ -169,7 +169,7 @@ construction.o: construction.cc.o
 
 # target to build an object file
 construction.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/construction.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/construction.cc.o
 .PHONY : construction.cc.o
 
 construction.i: construction.cc.i
@@ -178,7 +178,7 @@ construction.i: construction.cc.i
 
 # target to preprocess a source file
 construction.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/construction.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/construction.cc.i
 .PHONY : construction.cc.i
 
 construction.s: construction.cc.s
@@ -187,7 +187,7 @@ construction.s: construction.cc.s
 
 # target to generate assembly for a file
 construction.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/construction.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/construction.cc.s
 .PHONY : construction.cc.s
 
 detector.o: detector.cc.o
@@ -196,7 +196,7 @@ detector.o: detector.cc.o
 
 # target to build an object file
 detector.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/detector.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/detector.cc.o
 .PHONY : detector.cc.o
 
 detector.i: detector.cc.i
@@ -205,7 +205,7 @@ detector.i: detector.cc.i
 
 # target to preprocess a source file
 detector.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/detector.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/detector.cc.i
 .PHONY : detector.cc.i
 
 detector.s: detector.cc.s
@@ -214,7 +214,7 @@ detector.s: detector.cc.s
 
 # target to generate assembly for a file
 detector.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/detector.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/detector.cc.s
 .PHONY : detector.cc.s
 
 event.o: event.cc.o
@@ -223,7 +223,7 @@ event.o: event.cc.o
 
 # target to build an object file
 event.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/event.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/event.cc.o
 .PHONY : event.cc.o
 
 event.i: event.cc.i
@@ -232,7 +232,7 @@ event.i: event.cc.i
 
 # target to preprocess a source file
 event.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/event.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/event.cc.i
 .PHONY : event.cc.i
 
 event.s: event.cc.s
@@ -241,7 +241,7 @@ event.s: event.cc.s
 
 # target to generate assembly for a file
 event.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/event.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/event.cc.s
 .PHONY : event.cc.s
 
 generator.o: generator.cc.o
@@ -250,7 +250,7 @@ generator.o: generator.cc.o
 
 # target to build an object file
 generator.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/generator.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/generator.cc.o
 .PHONY : generator.cc.o
 
 generator.i: generator.cc.i
@@ -259,7 +259,7 @@ generator.i: generator.cc.i
 
 # target to preprocess a source file
 generator.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/generator.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/generator.cc.i
 .PHONY : generator.cc.i
 
 generator.s: generator.cc.s
@@ -268,7 +268,7 @@ generator.s: generator.cc.s
 
 # target to generate assembly for a file
 generator.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/generator.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/generator.cc.s
 .PHONY : generator.cc.s
 
 physics.o: physics.cc.o
@@ -277,7 +277,7 @@ physics.o: physics.cc.o
 
 # target to build an object file
 physics.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/physics.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/physics.cc.o
 .PHONY : physics.cc.o
 
 physics.i: physics.cc.i
@@ -286,7 +286,7 @@ physics.i: physics.cc.i
 
 # target to preprocess a source file
 physics.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/physics.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/physics.cc.i
 .PHONY : physics.cc.i
 
 physics.s: physics.cc.s
@@ -295,7 +295,7 @@ physics.s: physics.cc.s
 
 # target to generate assembly for a file
 physics.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/physics.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/physics.cc.s
 .PHONY : physics.cc.s
 
 run.o: run.cc.o
@@ -304,7 +304,7 @@ run.o: run.cc.o
 
 # target to build an object file
 run.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/run.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/run.cc.o
 .PHONY : run.cc.o
 
 run.i: run.cc.i
@@ -313,7 +313,7 @@ run.i: run.cc.i
 
 # target to preprocess a source file
 run.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/run.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/run.cc.i
 .PHONY : run.cc.i
 
 run.s: run.cc.s
@@ -322,7 +322,7 @@ run.s: run.cc.s
 
 # target to generate assembly for a file
 run.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/run.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/run.cc.s
 .PHONY : run.cc.s
 
 sim.o: sim.cc.o
@@ -331,7 +331,7 @@ sim.o: sim.cc.o
 
 # target to build an object file
 sim.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/sim.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/sim.cc.o
 .PHONY : sim.cc.o
 
 sim.i: sim.cc.i
@@ -340,7 +340,7 @@ sim.i: sim.cc.i
 
 # target to preprocess a source file
 sim.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/sim.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/sim.cc.i
 .PHONY : sim.cc.i
 
 sim.s: sim.cc.s
@@ -349,7 +349,7 @@ sim.s: sim.cc.s
 
 # target to generate assembly for a file
 sim.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/sim.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/sim.cc.s
 .PHONY : sim.cc.s
 
 stepping.o: stepping.cc.o
@@ -358,7 +358,7 @@ stepping.o: stepping.cc.o
 
 # target to build an object file
 stepping.cc.o:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/stepping.cc.o
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/stepping.cc.o
 .PHONY : stepping.cc.o
 
 stepping.i: stepping.cc.i
@@ -367,7 +367,7 @@ stepping.i: stepping.cc.i
 
 # target to preprocess a source file
 stepping.cc.i:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/stepping.cc.i
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/stepping.cc.i
 .PHONY : stepping.cc.i
 
 stepping.s: stepping.cc.s
@@ -376,7 +376,7 @@ stepping.s: stepping.cc.s
 
 # target to generate assembly for a file
 stepping.cc.s:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/stepping.cc.s
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/stepping.cc.s
 .PHONY : stepping.cc.s
 
 # Help Target
@@ -388,7 +388,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Simulation"
-	@echo "... TOF"
+	@echo "... atmospheric"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"

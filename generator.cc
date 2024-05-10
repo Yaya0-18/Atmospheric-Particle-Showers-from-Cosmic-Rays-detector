@@ -12,12 +12,12 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     //define the place where particle should be created
 
         //define postion and momentum
-        G4ThreeVector pos(0.,0.,0.);
+        G4ThreeVector pos(0.,0.,-20.*km);
         G4ThreeVector mom(0.,0.,1.);
 
         fparticleGun->SetParticlePosition(pos);
         fparticleGun->SetParticleMomentumDirection(mom);
-        fparticleGun->SetParticleMomentum(0.*GeV);
+        fparticleGun->SetParticleMomentum(100.*GeV);
         fparticleGun->SetParticleDefinition(particle);
 
 }

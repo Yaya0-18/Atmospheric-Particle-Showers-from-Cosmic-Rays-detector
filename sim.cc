@@ -32,6 +32,10 @@ int main(int argc , char** argv)
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
 
+    G4VModularPhysicsList* physics = new QGSP_BERT();
+    physics->RegisterPhysics(new G4DecayPhysics());
+    runManager->SetUserInitialization(physics);
+
     //runManager->Initialize();
 
     if(argc == 1 )

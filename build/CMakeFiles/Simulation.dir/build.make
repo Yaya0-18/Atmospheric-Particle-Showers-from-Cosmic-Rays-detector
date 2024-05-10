@@ -43,17 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaya/TOF-detector
+CMAKE_SOURCE_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaya/TOF-detector/build
+CMAKE_BINARY_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector/build"
 
 # Utility rule file for Simulation.
 
 # Include the progress variables for this target.
 include CMakeFiles/Simulation.dir/progress.make
 
-CMakeFiles/Simulation: TOF
+CMakeFiles/Simulation: atmospheric
 
 
 Simulation: CMakeFiles/Simulation
@@ -71,6 +71,6 @@ CMakeFiles/Simulation.dir/clean:
 .PHONY : CMakeFiles/Simulation.dir/clean
 
 CMakeFiles/Simulation.dir/depend:
-	cd /home/yaya/TOF-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yaya/TOF-detector /home/yaya/TOF-detector /home/yaya/TOF-detector/build /home/yaya/TOF-detector/build /home/yaya/TOF-detector/build/CMakeFiles/Simulation.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/yaya/Atmospheric cosmic ray shower-detector/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/yaya/Atmospheric cosmic ray shower-detector" "/home/yaya/Atmospheric cosmic ray shower-detector" "/home/yaya/Atmospheric cosmic ray shower-detector/build" "/home/yaya/Atmospheric cosmic ray shower-detector/build" "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/Simulation.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Simulation.dir/depend
 

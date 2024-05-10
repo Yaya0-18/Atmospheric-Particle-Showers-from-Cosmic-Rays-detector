@@ -44,16 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaya/TOF-detector
+CMAKE_SOURCE_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaya/TOF-detector/build
+CMAKE_BINARY_DIR = "/home/yaya/Atmospheric cosmic ray shower-detector/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TOF.dir/all
+all: CMakeFiles/atmospheric.dir/all
 
 .PHONY : all
 
@@ -64,7 +64,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Simulation.dir/clean
-clean: CMakeFiles/TOF.dir/clean
+clean: CMakeFiles/atmospheric.dir/clean
 
 .PHONY : clean
 
@@ -72,17 +72,17 @@ clean: CMakeFiles/TOF.dir/clean
 # Target rules for target CMakeFiles/Simulation.dir
 
 # All Build rule for target.
-CMakeFiles/Simulation.dir/all: CMakeFiles/TOF.dir/all
+CMakeFiles/Simulation.dir/all: CMakeFiles/atmospheric.dir/all
 	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/depend
 	$(MAKE) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaya/TOF-detector/build/CMakeFiles --progress-num= "Built target Simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" --progress-num= "Built target Simulation"
 .PHONY : CMakeFiles/Simulation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Simulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Simulation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" 0
 .PHONY : CMakeFiles/Simulation.dir/rule
 
 # Convenience name for target.
@@ -96,31 +96,31 @@ CMakeFiles/Simulation.dir/clean:
 .PHONY : CMakeFiles/Simulation.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TOF.dir
+# Target rules for target CMakeFiles/atmospheric.dir
 
 # All Build rule for target.
-CMakeFiles/TOF.dir/all:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/depend
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaya/TOF-detector/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target TOF"
-.PHONY : CMakeFiles/TOF.dir/all
+CMakeFiles/atmospheric.dir/all:
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/depend
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target atmospheric"
+.PHONY : CMakeFiles/atmospheric.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TOF.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TOF.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaya/TOF-detector/build/CMakeFiles 0
-.PHONY : CMakeFiles/TOF.dir/rule
+CMakeFiles/atmospheric.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/atmospheric.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles" 0
+.PHONY : CMakeFiles/atmospheric.dir/rule
 
 # Convenience name for target.
-TOF: CMakeFiles/TOF.dir/rule
+atmospheric: CMakeFiles/atmospheric.dir/rule
 
-.PHONY : TOF
+.PHONY : atmospheric
 
 # clean rule for target.
-CMakeFiles/TOF.dir/clean:
-	$(MAKE) -f CMakeFiles/TOF.dir/build.make CMakeFiles/TOF.dir/clean
-.PHONY : CMakeFiles/TOF.dir/clean
+CMakeFiles/atmospheric.dir/clean:
+	$(MAKE) -f CMakeFiles/atmospheric.dir/build.make CMakeFiles/atmospheric.dir/clean
+.PHONY : CMakeFiles/atmospheric.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
