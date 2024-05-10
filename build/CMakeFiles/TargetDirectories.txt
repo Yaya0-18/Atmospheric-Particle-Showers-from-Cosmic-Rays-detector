@@ -1,4 +1,0 @@
-/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/rebuild_cache.dir
-/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/edit_cache.dir
-/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/Simulation.dir
-/home/yaya/Atmospheric cosmic ray shower-detector/build/CMakeFiles/atmospheric.dir
